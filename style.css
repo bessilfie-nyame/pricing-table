@@ -1,13 +1,24 @@
 body {
 	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 	font-size: 20px;
+	background-color: rgb(220,220,220);
 }
-
 
 #heading {
 	margin: auto;
 	text-align: center;
 	color: darkblue;
+}
+
+#heading::after {
+  content: "";
+  height: 8px;
+  width: 100px;
+  display: block;
+  background-color: black;
+  position: relative;
+  bottom: 25px;
+  left: 46.5%;
 }
 
 table {
@@ -17,6 +28,8 @@ table {
     border-collapse: collapse;
     margin-top: 50px;
     margin-bottom: 50px;
+    background-color: gray;
+}
  }
 
 table tr:last-child {
